@@ -31,6 +31,14 @@ public class MainActivity extends Activity {
             }
         });
 
+        final Button clearButton = (Button) findViewById(R.id.clearButton);
+        clearButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                view.setImageBitmap(null);
+            }
+        });
+
         final Button otherButton = (Button) findViewById(R.id.otherButton);
         otherButton.setOnClickListener(new OnClickListener() {
             @Override
